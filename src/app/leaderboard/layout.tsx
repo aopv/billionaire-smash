@@ -14,13 +14,13 @@ export const metadata: Metadata = {
     "top rated billionaires",
   ],
   alternates: {
-    canonical: "https://bsmash.aopv.dev/leaderboard",
+    canonical: "https://bsmash.apoorvdarshan.com/leaderboard",
   },
   openGraph: {
     title: "Billionaire Elo Leaderboard | bsmash",
     description:
       "Live bsmash Elo leaderboard ranking billionaires by community votes.",
-    url: "https://bsmash.aopv.dev/leaderboard",
+    url: "https://bsmash.apoorvdarshan.com/leaderboard",
   },
 };
 

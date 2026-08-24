@@ -44,15 +44,15 @@ export const metadata: Metadata = {
     "billionaire voting game",
     "richest people in the world",
   ],
-  metadataBase: new URL("https://bsmash.aopv.dev"),
+  metadataBase: new URL("https://bsmash.apoorvdarshan.com"),
   alternates: {
-    canonical: "https://bsmash.aopv.dev",
+    canonical: "https://bsmash.apoorvdarshan.com",
   },
   openGraph: {
     title: "bsmash - Billionaire Smash Voting Game",
     description:
       "Two billionaires appear. You pick one. Elo rankings update live on bsmash.",
-    url: "https://bsmash.aopv.dev",
+    url: "https://bsmash.apoorvdarshan.com",
     siteName: "Billionaire Smash",
     images: [
       {
@@ -72,7 +72,7 @@ export const metadata: Metadata = {
     description:
       "Two billionaires appear. You pick one. Elo rankings update live on bsmash.",
     images: ["/og.png"],
-    creator: "@aporvv",
+    creator: "@apoorvdarshan",
   },
   robots: {
     index: true,
@@ -111,7 +111,7 @@ export default function RootLayout({
               "@type": "WebApplication",
               name: "Billionaire Smash",
               alternateName: ["bsmash", "Billionaire Smash"],
-              url: "https://bsmash.aopv.dev",
+              url: "https://bsmash.apoorvdarshan.com",
               description:
                 "Play bsmash, the billionaire voting game. Vote head-to-head on famous billionaires, browse profiles, and watch Elo rankings update in real time.",
               applicationCategory: "Entertainment",
@@ -120,7 +120,7 @@ export default function RootLayout({
               author: {
                 "@type": "Person",
                 name: "Apoorv Darshan",
-                url: "https://x.com/aporvv",
+                url: "https://x.com/apoorvdarshan",
               },
             }),
           }}

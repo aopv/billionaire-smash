@@ -8,7 +8,7 @@
   "preview_urls": false,
   "routes": [
     {
-      "pattern": "bsmash.aopv.dev",
+      "pattern": "bsmash.apoorvdarshan.com",
       "custom_domain": true
     }
   ],

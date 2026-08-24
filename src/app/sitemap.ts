@@ -4,7 +4,7 @@ import {
   getBillionaires,
 } from "@/lib/billionaire-slugs";
 
-const SITE_URL = "https://bsmash.aopv.dev";
+const SITE_URL = "https://bsmash.apoorvdarshan.com";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();

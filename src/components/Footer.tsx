@@ -27,7 +27,7 @@ export function Footer() {
         {/* Links row */}
         <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-3 text-xs text-[var(--text-tertiary)]">
           <a
-            href="https://x.com/aporvv"
+            href="https://x.com/apoorvdarshan"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-1.5 hover:text-[var(--accent)] transition-colors duration-300"
@@ -50,7 +50,7 @@ export function Footer() {
           </a>
 
           <a
-            href="https://github.com/sponsors/aopv"
+            href="https://github.com/sponsors/apoorvdarshan"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-1.5 hover:text-[var(--accent)] transition-colors duration-300"
@@ -62,7 +62,7 @@ export function Footer() {
           </a>
 
           <a
-            href="https://ko-fi.com/apv"
+            href="https://ko-fi.com/apoorvdarshan"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-1.5 hover:text-[var(--accent)] transition-colors duration-300"

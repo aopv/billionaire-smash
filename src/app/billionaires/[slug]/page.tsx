@@ -10,7 +10,7 @@ import {
 } from "@/lib/billionaire-slugs";
 import { countryToFlag } from "@/lib/flags";
 
-const SITE_URL = "https://bsmash.aopv.dev";
+const SITE_URL = "https://bsmash.apoorvdarshan.com";
 const allBillionaires = getBillionaires().sort((a, b) => a.rank - b.rank);
 
 type PageProps = {
