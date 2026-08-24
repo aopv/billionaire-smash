@@ -3,8 +3,8 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Privacy Policy",
   description:
-    "Privacy policy for Billionaire Smash (bsmash.app). Learn how we handle your data when you vote on Forbes 400 billionaires.",
-  alternates: { canonical: "https://www.bsmash.app/privacy" },
+    "Privacy policy for Billionaire Smash (bsmash.aopv.dev). Learn how we handle your data when you vote on Forbes 400 billionaires.",
+  alternates: { canonical: "https://bsmash.aopv.dev/privacy" },
 };
 
 export default function PrivacyPage() {
@@ -22,7 +22,7 @@ export default function PrivacyPage() {
         <section>
           <h2 className="text-lg font-bold text-[var(--text-primary)] mb-3">Information We Collect</h2>
           <p>
-            Billionaire Smash at bsmash.app (&quot;bsmash&quot;) collects minimal data. When you vote, we record your vote
+            Billionaire Smash at bsmash.aopv.dev (&quot;bsmash&quot;) collects minimal data. When you vote, we record your vote
             choice. If you choose to set a display name, that name is stored locally in your browser and
             sent with your votes. We do not collect email addresses, passwords, or other personal
             identifiers.

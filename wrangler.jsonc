@@ -8,11 +8,7 @@
   "preview_urls": false,
   "routes": [
     {
-      "pattern": "www.bsmash.app",
-      "custom_domain": true
-    },
-    {
-      "pattern": "bsmash.app",
+      "pattern": "bsmash.aopv.dev",
       "custom_domain": true
     }
   ],
