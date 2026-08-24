@@ -52,7 +52,7 @@ async function downloadPhoto(
 
 // --- Wikidata / Wikimedia Commons helpers ---
 
-const WIKI_UA = "BSmashBot/1.0 (https://bsmash.apoorvdarshan.com)";
+const WIKI_UA = "BSmashBot/1.0 (https://bsmash.aopv.dev)";
 const WIKI_HEADERS = { "User-Agent": WIKI_UA };
 
 function cleanNameForSearch(name: string): string {

@@ -27,7 +27,7 @@ export function Footer() {
         {/* Links row */}
         <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-3 text-xs text-[var(--text-tertiary)]">
           <a
-            href="https://x.com/apoorvdarshan"
+            href="https://x.com/aporvv"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-1.5 hover:text-[var(--accent)] transition-colors duration-300"
@@ -50,7 +50,7 @@ export function Footer() {
           </a>
 
           <a
-            href="https://github.com/sponsors/apoorvdarshan"
+            href="https://github.com/sponsors/aopv"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-1.5 hover:text-[var(--accent)] transition-colors duration-300"
@@ -62,7 +62,7 @@ export function Footer() {
           </a>
 
           <a
-            href="https://paypal.me/apoorvdarshan"
+            href="https://ko-fi.com/apv"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-1.5 hover:text-[var(--accent)] transition-colors duration-300"
@@ -70,7 +70,7 @@ export function Footer() {
             <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
               <path d="M7.076 21.337H2.47a.641.641 0 0 1-.633-.74L4.944.901C5.026.382 5.474 0 5.998 0h7.46c2.57 0 4.578.543 5.69 1.81 1.01 1.15 1.304 2.42 1.012 4.287-.023.143-.047.288-.077.437-.983 5.05-4.349 6.797-8.647 6.797H9.603c-.564 0-1.04.408-1.13.964L7.076 21.337zm7.342-15.6H13.1c-.283 0-.523.207-.567.487l-.467 3.05c.27-.015.54-.015.81-.015 2.077 0 3.756-.656 4.347-3.143.087-.36.1-.68.047-.96-.175-.94-1.127-1.42-2.852-1.42z" />
             </svg>
-            Donate
+            Support on Ko-fi
           </a>
         </div>
 

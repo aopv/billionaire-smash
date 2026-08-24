@@ -3,8 +3,8 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Privacy Policy",
   description:
-    "Privacy policy for Billionaire Smash (bsmash.apoorvdarshan.com). Learn how we handle your data when you vote on Forbes 400 billionaires.",
-  alternates: { canonical: "https://bsmash.apoorvdarshan.com/privacy" },
+    "Privacy policy for Billionaire Smash (bsmash.aopv.dev). Learn how we handle your data when you vote on Forbes 400 billionaires.",
+  alternates: { canonical: "https://bsmash.aopv.dev/privacy" },
 };
 
 export default function PrivacyPage() {
@@ -16,13 +16,13 @@ export default function PrivacyPage() {
 
       <div className="space-y-8 text-sm text-[var(--text-secondary)] leading-relaxed">
         <p>
-          Last updated: March 3, 2026
+          Last updated: August 25, 2026
         </p>
 
         <section>
           <h2 className="text-lg font-bold text-[var(--text-primary)] mb-3">Information We Collect</h2>
           <p>
-            Billionaire Smash at bsmash.apoorvdarshan.com (&quot;bsmash&quot;) collects minimal data. When you vote, we record your vote
+            Billionaire Smash at bsmash.aopv.dev (&quot;bsmash&quot;) collects minimal data. When you vote, we record your vote
             choice. If you choose to set a display name, that name is stored locally in your browser and
             sent with your votes. We do not collect email addresses, passwords, or other personal
             identifiers.
@@ -55,21 +55,11 @@ export default function PrivacyPage() {
         </section>
 
         <section>
-          <h2 className="text-lg font-bold text-[var(--text-primary)] mb-3">Payment Information</h2>
-          <p>
-            Elo boost purchases are processed through PayPal. We do not store your payment details,
-            credit card numbers, or PayPal credentials. We only store the PayPal order ID, payer ID,
-            purchase amount, and optional display name associated with the boost. PayPal&apos;s own privacy
-            policy governs how they handle your payment data.
-          </p>
-        </section>
-
-        <section>
           <h2 className="text-lg font-bold text-[var(--text-primary)] mb-3">Third-Party Services</h2>
           <p>
             Billionaire photos are loaded from Forbes media servers. We use the Forbes 400 API as a data
-            source for billionaire information. Payments are processed by PayPal. These third parties may
-            collect standard web request data (IP address, user agent) when serving content.
+            source for billionaire information. These services may collect standard web request data
+            (IP address, user agent) when serving content.
           </p>
         </section>
 

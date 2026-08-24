@@ -3,8 +3,6 @@
 import { useState, useEffect, useCallback } from "react";
 import Image from "next/image";
 import { countryToFlag } from "@/lib/flags";
-import { PayPalProvider } from "@/components/PayPalProvider";
-import { BoostModal } from "@/components/BoostModal";
 
 interface Billionaire {
   id: number;
@@ -14,7 +12,6 @@ interface Billionaire {
   photoUrl: string;
   source: string;
   elo: number;
-  eloBoost: number;
   displayElo: number;
   wins: number;
   losses: number;
@@ -27,7 +24,6 @@ function LeaderboardContent() {
   const [total, setTotal] = useState(0);
   const [search, setSearch] = useState("");
   const [page, setPage] = useState(1);
-  const [boostTarget, setBoostTarget] = useState<Billionaire | null>(null);
   const PAGE_SIZE = 30;
 
   const fetchData = useCallback(() => {
@@ -44,10 +40,6 @@ function LeaderboardContent() {
   useEffect(() => {
     fetchData();
   }, [fetchData]);
-
-  const handleBoostSuccess = () => {
-    fetchData();
-  };
 
   const indexed = billionaires.map((b, i) => ({ ...b, globalRank: i }));
 
@@ -201,24 +193,6 @@ function LeaderboardContent() {
                 </div>
               </div>
 
-              {/* Boost button */}
-              <button
-                onClick={() => setBoostTarget(b)}
-                className="flex-shrink-0 flex items-center gap-1 px-2.5 py-1.5 md:px-3 md:py-2 rounded-lg bg-[var(--accent)]/10 border border-[var(--accent)]/25 hover:bg-[var(--accent)]/20 hover:border-[var(--accent)]/50 hover:shadow-[0_0_16px_rgba(212,168,83,0.15)] transition-all duration-300 group cursor-pointer"
-                title={`Boost ${b.name}'s Elo`}
-              >
-                <svg
-                  width="13"
-                  height="13"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                  className="text-[var(--accent)] md:w-[15px] md:h-[15px]"
-                >
-                  <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
-                </svg>
-                <span className="text-[10px] md:text-xs font-bold text-[var(--accent)] group-hover:text-[var(--accent-bright)]">Boost</span>
-              </button>
-
               {/* Stats */}
               <div className="flex-shrink-0 text-right space-y-1">
                 <div className="flex items-center justify-end gap-1.5">
@@ -298,22 +272,10 @@ function LeaderboardContent() {
         </div>
       )}
 
-      {/* Boost Modal */}
-      {boostTarget && (
-        <BoostModal
-          billionaire={boostTarget}
-          onClose={() => setBoostTarget(null)}
-          onSuccess={handleBoostSuccess}
-        />
-      )}
     </div>
   );
 }
 
 export default function LeaderboardPage() {
-  return (
-    <PayPalProvider>
-      <LeaderboardContent />
-    </PayPalProvider>
-  );
+  return <LeaderboardContent />;
 }

@@ -2,14 +2,13 @@
 
 Who's more smash-worthy? Vote on billionaires in head-to-head matchups, ranked by Elo.
 
-**Live at [bsmash.apoorvdarshan.com](https://bsmash.apoorvdarshan.com)**
+**Live at [bsmash.aopv.dev](https://bsmash.aopv.dev)**
 
 ## Tech Stack
 
 - **Framework**: Next.js 15 + TypeScript
 - **Styling**: Tailwind CSS v4
 - **Database**: SQLite via Prisma (local), Turso (production)
-- **Payments**: PayPal (Elo boosts)
 - **Data**: Forbes 400 API
 
 ## Getting Started
@@ -25,24 +24,18 @@ Open [http://localhost:3000](http://localhost:3000).
 
 ## Environment Variables
 
-**`.env`** — production config (Turso, live PayPal)
+**`.env`** — production database config
 
 ```
 TURSO_DATABASE_URL=libsql://your-db.turso.io
 TURSO_AUTH_TOKEN=your-token
-NEXT_PUBLIC_PAYPAL_CLIENT_ID=your-live-client-id
-PAYPAL_CLIENT_SECRET=your-live-secret
-PAYPAL_API_BASE=https://api-m.paypal.com
 ```
 
-**`.env.local`** — local dev overrides (local SQLite, sandbox PayPal)
+**`.env.local`** — local development overrides
 
 ```
 TURSO_DATABASE_URL=
 TURSO_AUTH_TOKEN=
-NEXT_PUBLIC_PAYPAL_CLIENT_ID=your-sandbox-client-id
-PAYPAL_CLIENT_SECRET=your-sandbox-secret
-PAYPAL_API_BASE=https://api-m.sandbox.paypal.com
 ```
 
 ## Project Structure
@@ -57,17 +50,14 @@ src/
       vote/route.ts       # Submit vote
       leaderboard/route.ts
       feed/route.ts       # Live feed
-      boost/              # PayPal boost flow
       visitors/route.ts   # Visitor counter
       sync/route.ts       # Forbes data sync
   components/
     LiveFeed.tsx          # Scrolling live ticker
-    BoostModal.tsx        # PayPal boost modal
     Nav.tsx
     Footer.tsx
   lib/
     prisma.ts             # Prisma client (Turso adapter in prod)
-    paypal.ts             # PayPal API helpers
 prisma/
   schema.prisma
   seed.ts
@@ -77,4 +67,4 @@ prisma/
 
 Deploy to Cloudflare Workers with `npm run deploy` and configure the environment variables as Worker secrets. The app uses Turso as the production database — no filesystem required.
 
-Custom domain: `bsmash.apoorvdarshan.com`
+Custom domain: `bsmash.aopv.dev`

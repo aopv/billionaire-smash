@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Billionaire Elo Leaderboard",
   description:
-    "Live bsmash Elo leaderboard ranking billionaires by community votes. See win rates, search by name, country, or source of wealth, and boost your favorite billionaire.",
+    "Live bsmash Elo leaderboard ranking billionaires by community votes. See win rates and search by name, country, or source of wealth.",
   keywords: [
     "billionaire leaderboard",
     "elo ranking billionaires",
@@ -14,13 +14,13 @@ export const metadata: Metadata = {
     "top rated billionaires",
   ],
   alternates: {
-    canonical: "https://bsmash.apoorvdarshan.com/leaderboard",
+    canonical: "https://bsmash.aopv.dev/leaderboard",
   },
   openGraph: {
     title: "Billionaire Elo Leaderboard | bsmash",
     description:
       "Live bsmash Elo leaderboard ranking billionaires by community votes.",
-    url: "https://bsmash.apoorvdarshan.com/leaderboard",
+    url: "https://bsmash.aopv.dev/leaderboard",
   },
 };
 

@@ -10,8 +10,8 @@ export async function GET(request: NextRequest) {
     const db = getDb();
     const [rows, countResult] = await Promise.all([
       db.execute({
-        sql: `SELECT id, forbesId, name, netWorth, country, photoUrl, source, rank, elo, eloBoost, wins, losses
-          FROM Billionaire ORDER BY (elo + eloBoost) DESC LIMIT ? OFFSET ?`,
+        sql: `SELECT id, forbesId, name, netWorth, country, photoUrl, source, rank, elo, wins, losses
+          FROM Billionaire ORDER BY elo DESC LIMIT ? OFFSET ?`,
         args: [limit, offset],
       }),
       db.execute("SELECT COUNT(*) AS count FROM Billionaire"),
@@ -19,7 +19,7 @@ export async function GET(request: NextRequest) {
 
     const result = rows.rows.map((b) => ({
       ...b,
-      displayElo: numberValue(b.elo) + numberValue(b.eloBoost),
+      displayElo: numberValue(b.elo),
     }));
 
     return NextResponse.json({

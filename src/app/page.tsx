@@ -8,13 +8,13 @@ export const metadata: Metadata = {
   description:
     "Play bsmash, the billionaire voting game. Pick between famous billionaires, watch Elo rankings update live, and browse the billionaire leaderboard.",
   alternates: {
-    canonical: "https://bsmash.apoorvdarshan.com",
+    canonical: "https://bsmash.aopv.dev",
   },
   openGraph: {
     title: "bsmash - Billionaire Smash Voting Game",
     description:
       "Pick between famous billionaires and watch bsmash Elo rankings update live.",
-    url: "https://bsmash.apoorvdarshan.com",
+    url: "https://bsmash.aopv.dev",
   },
   twitter: {
     card: "summary_large_image",

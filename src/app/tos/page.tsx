@@ -3,8 +3,8 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Terms of Service",
   description:
-    "Terms of service for Billionaire Smash (bsmash.apoorvdarshan.com). Rules for voting, Elo boosts, and using the Forbes 400 ranking platform.",
-  alternates: { canonical: "https://bsmash.apoorvdarshan.com/tos" },
+    "Terms of service for Billionaire Smash (bsmash.aopv.dev). Rules for voting and using the Forbes 400 ranking platform.",
+  alternates: { canonical: "https://bsmash.aopv.dev/tos" },
 };
 
 export default function TermsPage() {
@@ -16,13 +16,13 @@ export default function TermsPage() {
 
       <div className="space-y-8 text-sm text-[var(--text-secondary)] leading-relaxed">
         <p>
-          Last updated: March 3, 2026
+          Last updated: August 25, 2026
         </p>
 
         <section>
           <h2 className="text-lg font-bold text-[var(--text-primary)] mb-3">Acceptance of Terms</h2>
           <p>
-            By accessing or using Billionaire Smash at bsmash.apoorvdarshan.com (&quot;bsmash&quot;), you agree to be bound
+            By accessing or using Billionaire Smash at bsmash.aopv.dev (&quot;bsmash&quot;), you agree to be bound
             by these Terms of Service. If you do not agree, please do not use the service.
           </p>
         </section>
@@ -51,17 +51,6 @@ export default function TermsPage() {
             If you choose to set a display name, it will be visible to other users in the live feed.
             Display names must not contain offensive, hateful, or inappropriate content. We reserve
             the right to remove or modify display names that violate this policy.
-          </p>
-        </section>
-
-        <section>
-          <h2 className="text-lg font-bold text-[var(--text-primary)] mb-3">Elo Boosts &amp; Payments</h2>
-          <p>
-            Users may purchase Elo boosts for billionaires via PayPal. All purchases are final and
-            non-refundable. Boost amounts are converted to Elo points at a fixed rate and applied
-            immediately. We are not responsible for PayPal account issues or payment failures.
-            Boost purchases are for entertainment purposes only and do not confer any real-world
-            value or ownership.
           </p>
         </section>
 
