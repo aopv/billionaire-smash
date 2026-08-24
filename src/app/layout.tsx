@@ -44,15 +44,15 @@ export const metadata: Metadata = {
     "billionaire voting game",
     "richest people in the world",
   ],
-  metadataBase: new URL("https://www.bsmash.app"),
+  metadataBase: new URL("https://bsmash.apoorvdarshan.com"),
   alternates: {
-    canonical: "https://www.bsmash.app",
+    canonical: "https://bsmash.apoorvdarshan.com",
   },
   openGraph: {
     title: "bsmash - Billionaire Smash Voting Game",
     description:
       "Two billionaires appear. You pick one. Elo rankings update live on bsmash.",
-    url: "https://www.bsmash.app",
+    url: "https://bsmash.apoorvdarshan.com",
     siteName: "Billionaire Smash",
     images: [
       {
@@ -111,7 +111,7 @@ export default function RootLayout({
               "@type": "WebApplication",
               name: "Billionaire Smash",
               alternateName: ["bsmash", "Billionaire Smash"],
-              url: "https://www.bsmash.app",
+              url: "https://bsmash.apoorvdarshan.com",
               description:
                 "Play bsmash, the billionaire voting game. Vote head-to-head on famous billionaires, browse profiles, and watch Elo rankings update in real time.",
               applicationCategory: "Entertainment",

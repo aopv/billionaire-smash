@@ -2,7 +2,7 @@
 
 Who's more smash-worthy? Vote on billionaires in head-to-head matchups, ranked by Elo.
 
-**Live at [bsmash.app](https://bsmash.app)**
+**Live at [bsmash.apoorvdarshan.com](https://bsmash.apoorvdarshan.com)**
 
 ## Tech Stack
 
@@ -77,4 +77,4 @@ prisma/
 
 Deploy to Cloudflare Workers with `npm run deploy` and configure the environment variables as Worker secrets. The app uses Turso as the production database — no filesystem required.
 
-Custom domain: `bsmash.app`
+Custom domain: `bsmash.apoorvdarshan.com`

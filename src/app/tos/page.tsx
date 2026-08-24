@@ -3,8 +3,8 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Terms of Service",
   description:
-    "Terms of service for Billionaire Smash (bsmash.app). Rules for voting, Elo boosts, and using the Forbes 400 ranking platform.",
-  alternates: { canonical: "https://www.bsmash.app/tos" },
+    "Terms of service for Billionaire Smash (bsmash.apoorvdarshan.com). Rules for voting, Elo boosts, and using the Forbes 400 ranking platform.",
+  alternates: { canonical: "https://bsmash.apoorvdarshan.com/tos" },
 };
 
 export default function TermsPage() {
@@ -22,7 +22,7 @@ export default function TermsPage() {
         <section>
           <h2 className="text-lg font-bold text-[var(--text-primary)] mb-3">Acceptance of Terms</h2>
           <p>
-            By accessing or using Billionaire Smash at bsmash.app (&quot;bsmash&quot;), you agree to be bound
+            By accessing or using Billionaire Smash at bsmash.apoorvdarshan.com (&quot;bsmash&quot;), you agree to be bound
             by these Terms of Service. If you do not agree, please do not use the service.
           </p>
         </section>
